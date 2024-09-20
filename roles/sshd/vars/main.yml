@@ -1,0 +1,6 @@
+# vars/main.yml
+
+var_sshd_set_keepalive: !!str 1           # Set the maximum number of client alive messages
+sshd_idle_timeout_value: !!str 600        # Set the client alive interval in seconds
+var_rekey_limit_size: !!str 1G            # Set the maximum amount of data before rekeying
+var_rekey_limit_time: !!str 1h            # Set the maximum time before rekeying

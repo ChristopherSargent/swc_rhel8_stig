@@ -1,0 +1,9 @@
+---
+- name: swc_rhel8_stig
+  hosts: all
+  gather_facts: yes
+  become_user: root
+  tasks:
+    - name: Include sshd role
+      include_role:
+        name: sshd
